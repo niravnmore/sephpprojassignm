@@ -102,114 +102,114 @@ Lab Exercise : Create a form that takes a user's name and email. Use the $_POST 
     </body>  
     </html>
 
-==============
-SQL Tables and SQL Queries
-==============
-Lab Exercise
+## SQL Tables and SQL Queries
 
-->		Create multiple tables and perform queries using:
-			SELECT, UPDATE, DELETE, INSERT
-			WHERE, LIKE, GROUP BY, HAVING
-			LIMIT, OFFSET, Subqueries, AND, OR, NOT
+Lab Exercise : Create multiple tables and perform queries using :  
+    SELECT, UPDATE, DELETE, INSERT, WHERE, LIKE, GROUP BY,  
+    HAVING, LIMIT, OFFSET, Subqueries, AND, OR, NOT  
 
-CREATE DATABASE learnvern;
-SHOW DATABASES;
-CREATE TABLE IF NOT EXISTS products(
-    productCode INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    productName varchar(20) NOT null,
-    productLine varchar(20) NOT null,
-    productVendor varchar(20) NOT null,
-    productDesc text(100),
-    quantityInStock INT unsigned NOT null DEFAULT 0,
-    buyPrice decimal(10,2) NOT NULL DEFAULT 99999.99,
-    MSRP decimal(10,2) NOT NULL DEFAULT 99999.99
- );
- CREATE TABLE IF NOT EXISTS productLines(
-    productLineCode INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    name varchar(20) NOT null,
-    Description text(100),
-    Image varchar(30)
- );
- CREATE TABLE IF NOT EXISTS productVendors(
-    vendorCode INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    name varchar(20) NOT null,
-    contactNumber varchar(15),
-    emailAddress varchar(30)
- );
+    CREATE DATABASE learnvern;  
+    SHOW DATABASES;  
+    
+    CREATE TABLE IF NOT EXISTS products(  
+        productCode INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,  
+        productName varchar(20) NOT null,  
+        productLine varchar(20) NOT null,  
+        productVendor varchar(20) NOT null,  
+        productDesc text(100),  
+        quantityInStock INT unsigned NOT null DEFAULT 0,  
+        buyPrice decimal(10,2) NOT NULL DEFAULT 99999.99,  
+        MSRP decimal(10,2) NOT NULL DEFAULT 99999.99  
+    );  
+    
+    CREATE TABLE IF NOT EXISTS productLines(  
+        productLineCode INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,  
+        name varchar(20) NOT null,  
+        Description text(100),  
+        Image varchar(30)  
+    );  
+    
+    CREATE TABLE IF NOT EXISTS productVendors(  
+        vendorCode INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,  
+        name varchar(20) NOT null,  
+        contactNumber varchar(15),  
+        emailAddress varchar(30)  
+    );  
 
-=====SELECT=====
-SELECT * FROM products;
+    # Select queries  
+    SELECT * FROM products;  
 
-=====UPDATE=====
-UPDATE `productvendors` SET `emailAddress` = 'abctraders@trading.com' WHERE `productvendors`.`vendorCode` = 1001;
-UPDATE `automobile` SET `name` = 'Swift', `fueltype` = 'CNG' WHERE `automobile`.`id` = 10003;
+    # Update queries  
+    UPDATE `productvendors` SET `emailAddress` = 'abctraders@trading.com'  
+    WHERE `productvendors`.`vendorCode` = 1001;  
+    UPDATE `automobile` SET `name` = 'Swift', `fueltype` = 'CNG' WHERE `automobile`.`id` = 10003;  
 
-=====DELETE=====
-DELETE FROM `automobile` where `id` = 10003;
+    # Delete queries  
+    DELETE FROM `automobile` where `id` = 10003;  
 
-=====INSERT=====
-INSERT INTO productlines (productLineCode, name, Description) VALUES (10001, 'DOMS pencils',  'HB pencils');
-INSERT INTO productlines VALUES (null,'Natraj pencils','HB pencils',null), (null, 'Natraj Erasers','Erasers',null),(null, 'Cello Ballpens', 'Ballpens',null);
-INSERT INTO `products` (`productCode`, `productName`, `productLine`, `productVendor`, `productDesc`, `quantityInStock`, `buyPrice`, `MSRP`) VALUES ('10001', 'Natraj pencils', 'Natraj pencils', 'KGB', 'Natraj pencils', '50', '42.00', '50.00');
+    # Insert queries  
+    INSERT INTO productlines (productLineCode, name, Description) VALUES (10001, 'DOMS pencils', 'HB pencils');  
+    INSERT INTO productlines VALUES (null,'Natraj pencils','HB pencils',null), (null, 'Natraj Erasers','Erasers',null),(null,'Cello Ballpens','Ballpens',null);  
+    INSERT INTO `products` (`productCode`, `productName`, `productLine`, `productVendor`, `productDesc`, `quantityInStock`, `buyPrice`, `MSRP`) VALUES ('10001', 'Natraj pencils', 'Natraj pencils', 'KGB', 'Natraj pencils', '50', '42.00', '50.00');  
 
-=====ALTER=====
-ALTER TABLE `products` CHANGE `productLine` `productLine` VARCHAR(30) NOT NULL;
-ALTER TABLE products ADD FOREIGN KEY (prod_ven_id) REFERENCES productvendors (vendorCode);
+    #Alter queries  
+    ALTER TABLE `products` CHANGE `productLine` `productLine` VARCHAR(30) NOT NULL;  
+    ALTER TABLE products ADD FOREIGN KEY (prod_ven_id) REFERENCES productvendors (vendorCode);  
 
-=====WHERE=====
-UPDATE `automobile` SET `name` = 'Swift', `fueltype` = 'CNG' WHERE `automobile`.`id` = 10003;
+    # Where queries  
+    UPDATE `automobile` SET `name` = 'Swift', `fueltype` = 'CNG' WHERE `automobile`.`id` = 10003;  
+    
+    # Like queries
+    SELECT productLineCode, name, Description FROM productlines WHERE Description LIKE '%pen%';  
 
-=====LIKE=====
-SELECT productLineCode, name, Description FROM productlines WHERE Description LIKE '%pen%';
+    #Group by queries  
+    #Having queries  
+    #Limit queries  
+    #Offset queries  
+    #Subqueries  
+    #AND queries  
+    #OR queries  
+    #NOT queries  
 
-=====GROUP BY=====
+## Conditions, Events, and Flows
 
+1. Explain how conditional statements work in PHP  
+Conditional statements provides an option to validate certain conditions which can be later used to perform actions(decision making). e.g.,
 
-=====HAVING=====
+        if($con == TRUE){  
+            echo 'Execute Command';  
+        }  
 
+## If Condition and If-Else If
+Lab Exercise : Write a PHP program to determine if a number is even or odd using if conditions.  
 
-INSERT INTO students (id, fname , lname, class, age, marks ) VALUES (1,'Meet','Shah','CE',22,55),(null,'Subham','Gupta','EC',26,85),(null,'Jigar','Darji','EE',22,65),(null,'Keval','Gagar', 'EC',32,70),(null,'Parth','Mehta','CE',23,20);
+    <?php  
+    $num = 21;  
+    if ($num % 2 == 0) {  
+        echo 'number is an even number';  
+    } else {  
+        echo 'number is an odd number';  
+    }  
+    ?>  
 
+## Practical Example: Calculator and Day Finder
+Lab Exercise :  
+1. Simple Calculator : Create a calculator using if-else conditions that takes two inputs and an operator (+, -, *, /).  
 
-=====LIMIT=====
-
-
-=====OFFSET=====
-
-
-=====Subqueries=====
-
-
-=====AND=====
-
-
-=====OR=====
-
-=====NOT=====
-
-
-6. Conditions, Events, and Flows
-THEORY EXERCISE:
-Explain how conditional statements work in PHP
-
-Conditional statements provides an option to validate certain conditions which can be later used to perform actions(decision making).
-e.g., IF(con == TRUE){print('Execute Command')}
-
-7. If Condition and If-Else If
-LAB EXERCISE: 
-
-Write a PHP program to determine if a number is even or odd using if conditions.
-ifcondition.php
-
-8. Practical Example: Calculator and Day Finder
-LAB EXERCISE:
-
-1. Simple Calculator: 
-
-Create a calculator using if-else conditions that takes two inputs
-and an operator (+, -, *, /). 
-
-2. Day Finder: Write a script that finds the current day. If it is Sunday, print "Happy
-Sunday."
-
-simplecalculator.php
+        <?php  
+        $num1 = (int)readline('Please select a number: ');  
+        $num2 = (int)readline('Please select another number: ');  
+        $op = readline('Please select an operator, A for addition, S for Substraction, M for Multiplication, D for Division: ');  
+        if($op=='A'){  
+            echo 'Result: ' . $result = $num1 + $num2;  
+        } elseif($op=='S'){  
+            echo 'Result: ' . $result = $num1 - $num2;  
+        } elseif($op=='M'){  
+            echo 'Result: ' . $result = $num1 * $num2;  
+        }elseif($op=='D'){  
+            echo 'Result: ' . $result = $num1 / $num2;  
+        }else{  
+            echo 'Please select provided operation.';  
+        }  
+        ?>
+2. Day Finder : Write a script that finds the current day. If it is Sunday, print "Happy Sunday."  
