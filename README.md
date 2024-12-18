@@ -1,68 +1,106 @@
+
 # sephpprojassignm
 
-Core PHP
+## Core PHP
 
-Discuss the structure of PHP script and how to embed PHP in HTML.
-    PHP script is always surrounded by '<?php' and '?>'. This is to make the system understand the start and end of the script.
-    PHP can be easily embedded in an HTML using the PHP start and end tags and the file should be renamed as a '.php' file.
+1. Discuss the structure of PHP script and how to embed PHP in HTML.  
+PHP script is always surrounded by `<?php` and `?>`. This is to make the system understand the start and end of the script.  
+PHP can be easily embedded in an HTML using the PHP start and end tags and the file should be renamed as a '.php' file.
 
-What are the rules for naming variables in PHP?
-    All PHP variables start with the '$' sign.
-    First letter after '$' should be an alphabet or underscore.
-    Name of the variable should contain alpha-numeric characters and underscore.
-    Variable names are case-sensitive.
-        e.g., $tommy, $page1, $p_24, $SPECIAL, $_999
+2. What are the rules for naming variables in PHP?  
+All PHP variables start with the `$` sign.  
+First letter after `$` should be an alphabet or underscore.  
+Name of the variable should contain alpha-numeric characters and underscore.  
+Variable names are case-sensitive. e.g., `$tommy`, `$page1`, `$p_24`, `$SPECIAL`, `$_999`
 
-Lab Exercise
-	Write a PHP script to print "Hello, World!" on a web page.
-<?php
-echo '<h1>Hello, World!</h1>';
-?>
+Lab Exercise : Write a PHP script to print "Hello, World!" on a web page.  
 
-==============
-PHP variables
-==============
-Theory Exercise
+    <?php
+    echo <h1>Hello, World!</h1>;
+    ?>
 
-->		Explain the concept of variables in PHP and their scope.
-			Php is a loosely typed scripting language so we do not need to declare and define a variable and its datatype before assigning. 
-			We can directly assign a value to a variable and its datatype will be assigned automatically based on the value. Variables in PHP are case-sensitive.
-			e.g., 	$new = 'hello world'
-					$NEW = 'Hello People'
-					$a = 25
-					$b = 11.5
-			Variable in php can have three different scope: local, global and static.
+## PHP variables
 
-Lab Exercise
-	Create a PHP script to declare and initialize different types of variables (integer, float, string, boolean). Display them using echo.
+1. Explain the concept of variables in PHP and their scope.  
+Php is a loosely typed scripting language so we do not need to declare and define a variable and its datatype before assigning. We can directly assign a value to a variable and its datatype will be assigned automatically based on the provided value. Variables in PHP are case-sensitive.  
 
+        <?php  
+        $NEW = 'Hello People';  
+        $new = 'hello world';  
+        $a = 25;  
+        $b = 11.5;  
+        ?>
 
-==============
-Super Global variables
-==============
-Theory Exercise
+2. Variables in php can have three different scope: local, global and static.
 
-->		What are super global variables in PHP? List atleast five super global arrays and their use.
-			Super Global variables are variables that are accessible to all the class, function and file in php. 
-			They are used to share information across different parts of the script.
-			$_ENV 
-				used to access environment variables for the server
-			
-			$_SERVER
-				used to access information about headers, paths and script locations
+Lab Exercise : Create a PHP script to declare and initialize different types of variables (integer, float, string, boolean). Display them using echo.
 
-			$_SESSION
-				used to access session related information
+    <?php  
+    $int = 25;  
+    echo $int;  
 
-			$_COOKIE
-				used to access user preference for the webpage
-			
-			$_GET
-				used to access data submitted through form
+    $float = 13.75;  
+    echo $float;  
 
-Lab Exercise:
-	Create a form that takes a user's name and email. Use the $_POST super global to display the entered data.
-->		supervar.php
+    $string = 'This is a string';  
+    echo $string;  
+    
+    $bool = TRUE;  
+    echo $bool;  
+    ?>
+
+## Super Global variables
+
+1. What are super global variables in PHP? List atleast five super global arrays and their use.  
+Super Global variables are variables that are accessible to all the class, function and file in php.  
+They are used to share information across different parts of the script.  
+
+        $_ENV; //used to access environment variables for the server  
+        $_SERVER; //used to access information about headers, paths and script locations  
+        $_SESSION; //used to access session related information  
+        $_COOKIE; //used to access user preference for the webpage  
+        $_GET; //used to access data submitted through form
+
+Lab Exercise : Create a form that takes a user's name and email. Use the $_POST super global to display the entered data.  
+
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+</head>
+<body>
+    <h1>User Form</h1>
+    <div>
+        <form action="" method="post">
+            <div>
+                <label for="name">Name :</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <input type="submit" value="Submit!">
+        </form>
+    </div>
+    <br><br>
+    <?php
+    // print_r($_POST);
+    $data = $_POST;
+    if($data['name']){
+        $name = $data['name'];
+        echo "Your name is $name.<br>";
+    }
+    if($data['email']){
+        $email = $data['email'];
+        echo "Your email address is $email.<br>";
+    }
+    ?>
+</body>
+</html>
 
 ==============
 SQL Tables and SQL Queries
