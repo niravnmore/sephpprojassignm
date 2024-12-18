@@ -63,14 +63,14 @@ They are used to share information across different parts of the script.
 
 Lab Exercise : Create a form that takes a user's name and email. Use the $_POST super global to display the entered data.  
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Form</title>
-</head>
-<body>
+    <!DOCTYPE html>  
+    <html lang="en">  
+    <head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>User Form</title>  
+    </head>  
+    <body>  
     <h1>User Form</h1>
     <div>
         <form action="" method="post">
@@ -98,9 +98,9 @@ Lab Exercise : Create a form that takes a user's name and email. Use the $_POST 
         $email = $data['email'];
         echo "Your email address is $email.<br>";
     }
-    ?>
-</body>
-</html>
+    ?>  
+    </body>  
+    </html>
 
 ==============
 SQL Tables and SQL Queries
