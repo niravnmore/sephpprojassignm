@@ -63,7 +63,7 @@ They are used to share information across different parts of the script.
 
 Lab Exercise : Create a form that takes a user's name and email. Use the $_POST super global to display the entered data.  
 
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
