@@ -213,3 +213,5 @@ Lab Exercise :
         }  
         ?>
 2. Day Finder : Write a script that finds the current day. If it is Sunday, print "Happy Sunday."  
+
+# work in progress ...
