@@ -1,28 +1,39 @@
+# Module-1_Core_PHP
 
-# sephpprojassignm
+---
+## PHP Syntax
+---
 
-## Core PHP
+### 1. Discuss the structure of PHP script and how to embed PHP in HTML.  
 
-1. Discuss the structure of PHP script and how to embed PHP in HTML.  
-PHP script is always surrounded by `<?php` and `?>`. This is to make the system understand the start and end of the script.  
-PHP can be easily embedded in an HTML using the PHP start and end tags and the file should be renamed as a '.php' file.
+- PHP script is always surrounded by `<?php` and `?>`. 
+- Any logic or PHP script should be present between the starting and ending PHP tags.
+- This is to make the system understand the start and end of the script.  
+- PHP can be easily embedded in an HTML using the PHP start and end tags.
+- After PHP is embedded the file should be renamed as a '.php' file as file extension.
 
-2. What are the rules for naming variables in PHP?  
-All PHP variables start with the `$` sign.  
-First letter after `$` should be an alphabet or underscore.  
-Name of the variable should contain alpha-numeric characters and underscore.  
-Variable names are case-sensitive. e.g., `$tommy`, `$page1`, `$p_24`, `$SPECIAL`, `$_999`
+### 2. What are the rules for naming variables in PHP?  
 
-Lab Exercise : Write a PHP script to print "Hello, World!" on a web page.  
+- All PHP variables start with the `$` sign.  
+- First letter after `$` should be an alphabet or underscore.  
+- First letter should not be a number.
+- Name of the variable may contain alphanumeric characters and underscore only.  
+- In PHP, variable names are case-sensitive so variable `$num` and `$NUM` are different.
+- e.g., `$tommy`, `$page1`, `$p_24`, `$SPECIAL`, `$_999`
 
-    <?php
-    echo <h1>Hello, World!</h1>;
-    ?>
+### Lab Exercise : Write a PHP script to print "Hello, World!" on a web page.  
 
+- File name : M1LE_01.php
+
+---
 ## PHP variables
+---
 
-1. Explain the concept of variables in PHP and their scope.  
-Php is a loosely typed scripting language so we do not need to declare and define a variable and its datatype before assigning. We can directly assign a value to a variable and its datatype will be assigned automatically based on the provided value. Variables in PHP are case-sensitive.  
+### 1. Explain the concept of variables in PHP and their scope.  
+
+- PHP is a loosely typed scripting language so we do not need to declare and define a variable and its datatype before assigning. 
+- We can directly assign a value to a variable and its datatype will be assigned automatically based on the provided value. 
+- Variables in PHP are case-sensitive.  
 
         <?php  
         $NEW = 'Hello People';  
