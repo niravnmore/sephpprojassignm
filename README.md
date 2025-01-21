@@ -89,6 +89,8 @@ Create multiple tables and perform queries using : SELECT, UPDATE, DELETE, INSER
 
 - File name : <a href="M1_LE_04.sql">M1_LE_04.sql</a>
 
+- File name : <a href="M1_LE_04.php">M1_LE_04.php</a>
+
 ## Conditions, Events, and Flows
 
 ### Q. Explain how conditional statements work in PHP  
@@ -259,3 +261,90 @@ Chessboard Pattern: Use a nested loop to create a chessboard pattern (8x8 grid).
 Various Patterns: Generate different patterns using loops.
 
 - File name : <a href="M1_LE_14.php">M1_LE_14.php</a>
+
+## PHP Array and Array Functions
+
+### Q. Define arrays in PHP. What are the different types of arrays?
+
+Array is a data structure that stores multiple values in a single variable.
+Arrays allow store, organize and manipulate related data easily and efficiently.
+In PHP, arrays can dynamically resize and hold mixed data types.
+
+Array can be defined in PHP using `array()` function and through `[]` syntax.
+```php
+$animals = array("cat", "dog", "cow", "buffalo");
+$flowers = ["rose", "lily", "tulip", "marigold"];
+```
+
+There are 3 types of arrays in PHP. 
+1. Indexed Arrays
+2. Associative Arrays
+3. Multi-dimensional Arrays
+
+#### Indexed Arrays
+
+These arrays use numeric indices for storing values. The numbering starts from 0.
+```php
+$animals = ["cat", "dog", "cow", "buffalo"];
+echo $animals[0];  // Output : cat
+```
+
+#### Associative Arrays
+
+These arrays use keys (strings) instead of numeric indices to store value.
+```php
+$car = [
+    "name" : "Octavia",
+    "brand" : "Skoda",
+    "horsepower" : "188 bhp",
+    "style" : "Sedan"
+]
+echo $car["name"];  // Output : Octavia
+```
+
+#### Multidimensional Arrays
+
+These arrays contain one or more arrays as their elements.
+These are mostly used to create a matrix structure or a nested structure.
+```php
+$foodChart = [
+    ["Tea", "Coffee", "Milk"],
+    ["Muffins", "Cookies", "Pastries"],
+]
+echo $foodChart[2][1]; // Output : Muffins
+```
+
+It is possible to combine indexed and associative arrays within the same structure.
+
+### Lab Exercise : 15. 
+
+Display the value of an array.
+
+- File name : <a href="M1_LE_15.php">M1_LE_15.php</a>
+
+### Lab Exercise : 16. 
+
+Find and display the number of odd and even elements in an array.
+
+- File name : <a href="M1_LE_16.php">M1_LE_16.php</a>
+
+### Lab Exercise : 17. 
+
+Create an associative array for user details (name, email, age) and display them.
+
+- File name : <a href="M1_LE_17.php">M1_LE_17.php</a>
+
+### Lab Exercise : 18. 
+
+Write a script to shift all zero values to the bottom of an array.
+
+- File name : <a href="M1_LE_18.php">M1_LE_18.php</a>
+
+## PHP Date-Time Function
+
+### Lab Exercise : 19. 
+
+Write a script to display the current date and time in different formats.
+
+- File name : <a href="M1_LE_19.php">M1_LE_19.php</a>
+
