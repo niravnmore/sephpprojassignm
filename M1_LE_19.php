@@ -27,8 +27,39 @@
 
     <p>
         <?php
+        echo "Format 'D, d m Y' : " . date("D, d m Y");
+        ?>
+    </p>
 
-        echo date("D, d m Y");
+    <p>
+        <?php
+        echo "Format 'D, d-M-Y' : " . date("D, d-M-Y");
+        ?>
+    </p>
+
+    <p>
+        <?php
+        echo "Format 'D, d-M-Y, H:i:s' : " . date("D, d-M-Y, H:i:s");
+        ?>
+    </p>
+
+    <p>
+        <?php
+        echo "Format 'l, d-M-Y, H:i:s, A' : " . date("l, d-M-Y, H:i:s, A");
+        ?>
+    </p>
+
+    <p>
+        <?php
+        echo "Format DATE_ATOM : " . date(DATE_ATOM);
+        ?>
+
+    </p>
+
+    <p>
+        <?php
+
+        echo "Format DATE_COOKIE : " . date(DATE_COOKIE);
 
         ?>
 
@@ -37,7 +68,7 @@
     <p>
         <?php
 
-        echo date("D, d-M-Y");
+        echo "Format DATE_ISO8601 : " . date(DATE_ISO8601);
 
         ?>
 
@@ -46,7 +77,7 @@
     <p>
         <?php
 
-        echo date("D, d-M-Y, H:i:s");
+        echo "Format DATE_RFC822 : " . date(DATE_RFC822);
 
         ?>
 
@@ -55,7 +86,7 @@
     <p>
         <?php
 
-        echo date("l, d-M-Y, H:i:s, A");
+        echo "Format DATE_RFC850 : " . date(DATE_RFC850);
 
         ?>
 
@@ -64,7 +95,7 @@
     <p>
         <?php
 
-        echo date(DATE_ATOM);
+        echo "Format DATE_RFC1036 : " . date(DATE_RFC1036);
 
         ?>
 
@@ -73,7 +104,25 @@
     <p>
         <?php
 
-        echo date(DATE_COOKIE);
+        echo "Format DATE_RFC1123 : " . date(DATE_RFC1123);
+
+        ?>
+
+    </p>
+
+    <p>
+        <?php
+
+        echo "Format DATE_RFC2822 : " . date(DATE_RFC2822);
+
+        ?>
+
+    </p>
+
+    <p>
+        <?php
+
+        echo "Format DATE_W3C : " . date(DATE_W3C);
 
         ?>
 

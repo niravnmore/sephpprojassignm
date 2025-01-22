@@ -5,34 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Module 1 Lab Exercise 04</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 </head>
 
 <body>
 
-    <h1>Module 1 Lab Exercise 04</h1>
+    <div class="container-fluid">
 
-    <p>Create multiple tables and perform queries using : SELECT, UPDATE, DELETE, INSERT, WHERE, LIKE, GROUP BY, HAVING, LIMIT, OFFSET, Subqueries, AND, OR, NOT.</p>
+        <div class="row bg-dark text-white text-center">
+            <h1>Module 1 Lab Exercise 04</h1>
+        </div>
 
-    <!-- Create multiple tables and perform queries using : SELECT, UPDATE, DELETE, INSERT, WHERE, LIKE, GROUP BY, HAVING, LIMIT, OFFSET, Subqueries, AND, OR, NOT -->
+        <div class="row bg-dark text-white text-center">
+            <p>Create multiple tables and perform queries using : SELECT, UPDATE, DELETE, INSERT, WHERE, LIKE, GROUP BY,
+                HAVING, LIMIT, OFFSET, Subqueries, AND, OR, NOT.</p>
+        </div>
 
-    <h3>SQL Queries</h3>
+        <!-- Create multiple tables and perform queries using : SELECT, UPDATE, DELETE, INSERT, WHERE, LIKE, GROUP BY, HAVING, LIMIT, OFFSET, Subqueries, AND, OR, NOT -->
 
-    <textarea id="text-input" rows="6" cols="60" value=""><?php echo file_get_contents('M1_LE_04.md') ?></textarea>
+        <h3>SQL Queries</h3>
 
-    <div id="preview"> </div>
+        <textarea id="text-input" rows="50" cols="100"
+            value=""><?php echo file_get_contents('M1_LE_04.md') ?></textarea>
 
-    <script src="./M1_LE_04.md"></script>
-    <script>
-      function Editor(input, preview) {
-        this.update = function () {
-          preview.innerHTML = markdown.toHTML(input.value);
-        };
-        input.editor = this;
-        this.update();
-      }
-      var $ = function (id) { return document.getElementById(id); };
-      new Editor($("text-input"), $("preview"));
-    </script>
+        <div id="preview"> </div>
+
+    </div>
 
 </body>
 

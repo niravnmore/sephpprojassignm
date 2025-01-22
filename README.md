@@ -1,8 +1,6 @@
 # Module-1_Core_PHP
 
----
 ## PHP Syntax
----
 
 ### Q. Discuss the structure of PHP script and how to embed PHP in HTML.  
 
@@ -27,9 +25,7 @@ Write a PHP script to print "Hello, World!" on a web page.
 
 - File name : <a href="M1_LE_01.php">M1_LE_01.php</a>
 
----
 ## PHP variables
----
 
 ### Q. Explain the concept of variables in PHP and their scope.  
 
@@ -86,8 +82,6 @@ Create a form that takes a user's name and email. Use the $_POST super global to
 ### Lab Exercise : 04. 
 
 Create multiple tables and perform queries using : SELECT, UPDATE, DELETE, INSERT, WHERE, LIKE, GROUP BY, HAVING, LIMIT, OFFSET, Subqueries, AND, OR, NOT
-
-- File name : <a href="M1_LE_04.sql">M1_LE_04.sql</a>
 
 - File name : <a href="M1_LE_04.php">M1_LE_04.php</a>
 
@@ -348,3 +342,121 @@ Write a script to display the current date and time in different formats.
 
 - File name : <a href="M1_LE_19.php">M1_LE_19.php</a>
 
+## Header Function
+
+### Q. What is the header function in PHP and how is it used?
+
+- The `header()` function in PHP is used to send raw HTTP headers to the browser before any output is sent.  
+- It allows you to control the headers that are sent to the client, enabling you to perform tasks like redirecting the user, setting content types, managing cache control, or customizing HTTP responses.  
+- No HTML or whitespace precede the header() function.  
+- `exit` function is used after header() function after redirection or file download.  
+
+Uses of header() function :
+1. Redirecting to another page
+```php
+header("Location: https://www.google.com");
+exit;
+```
+2. Setting Content-type
+```php
+header("Content-type: application/json");
+```
+3. Sending custom HTTP response codes
+```php
+header("HTTP/1.1 404 Not Found");
+echo "Page not found!";
+```
+4. File Downloads
+```php
+header("Content-Description: File Transfer");
+header("Content-Type: application/octet-stream");
+header("Content-Disposition: attachment; filename=\"example.txt\"");
+header("Content-Length: " . filesize("example.txt"));
+readfile("example.txt");
+exit;
+```
+
+### Lab Exercise : 20. 
+
+Redirect users to another page using the header() function.
+
+- File name : <a href="M1_LE_20.php">M1_LE_20.php</a>
+
+## Include and Require
+
+### Q. Explain the difference between include and require in PHP.
+
+- The `include` and `require` statements are both used to include and execute contents of one PHP file into another.
+- By using a PHP script through `include`, we get a warning message if the file is missing but the script is still executed.
+- By using a PHP script through `require`, we get a fatal error message if the file is missing and stops execution of the script.
+- The main difference is the way both statement handle errors.
+- `include` statement is used when the file is optional or non-critical. `require` statement is used when the file is essential for the script to work properly.
+- `include`: Non-critical. Issues a warning if the file is missing and continues execution.
+- `require`: Critical. Issues a fatal error if the file is missing and halts execution.
+
+### Lab Exercise : 21. 
+
+**Calculator**: Create a calculator using user-defined functions.
+
+- File name : <a href="M1_LE_21.php">M1_LE_21.php</a>
+
+### Lab Exercise : 22. 
+
+**Factorial**: Write a function that finds the factorial of a number using recursion.
+
+- File name : <a href="M1_LE_22.php">M1_LE_22.php</a>
+
+### Lab Exercise : 23. 
+
+**String Reverse**: Reverse a string without using built-in functions.
+
+- File name : <a href="M1_LE_23.php">M1_LE_23.php</a>
+
+### Lab Exercise : 24. 
+
+**Download File**: Create a button that allows users to download a file
+
+- File name : <a href="M1_LE_24.php">M1_LE_24.php</a>
+
+## PHP Expressions, Operations, and String Functions
+
+### Q. Explain what PHP expressions are and give examples of arithmetic and logical operations.
+
+- In PHP, an expression is any valid combination of variables, operators, and values that evaluates to a single value.  
+- Expressions are used to perform operations, manipulate data, and return results.
+- There are various types of expressions used in PHP :
+    1. Arithmetic Expressions
+    2. String Expressions
+    3. Comparison Expressions
+    4. Logical Expressions
+    5. Assignment Expressions
+    6. Increment/Decrement Expressions
+    7. Array Expressions
+    8. Ternary Expressions
+    9. Null Coalescing Expression
+
+- Examples of arithmetic operations
+```php
+$a = 10, $b = 20;
+$add = $a + $b;
+$sub = $a - $b;
+$mul = $a * $b;
+$div = $b / $a;
+$a += $b;
+```
+- Examples of logical operations
+```php
+$is_odd = true;
+$is_prime = false;
+$check1 = $is_odd && $is_prime;
+$check2 = $is_odd || $is_prime;
+```
+
+### Lab Exercise : 25. 
+
+Write a script to perform various string operations like concatenation, substring
+extraction, and string length determination.
+
+- File name : <a href="M1_LE_25.php">M1_LE_25.php</a>
+
+## 
