@@ -24,52 +24,108 @@
 
         <!-- Write a script to perform various string operations like concatenation, substring
             extraction, and string length determination. -->
-        <div class="row bg-dark text-white text-center h-5">
-            <h3>String Reverse</h3>
-        </div>
+        <div class="row bg-dark text-white h-5">
 
-        <div class="container text-center text-white bg-dark col-4">
-            <form action="" method="post">
-                <select class="form-control mb-3" name="operation" id="op">
-                    <option value="">Select Operation</option>
-                    <option value="concate">Concatenation</option>
-                    <option value="substr">Substring Extraction</option>
-                    <option value="strlen">String Length</option>
-                </select>
-                <button type="submit">Process</button>
-            </form>
-        </div>
-        <div class="container text-center text-white bg-dark col-4 pt-5">
+            <div class="col-4 p-5">
+                <h3 class="mb-3">String Concatenation</h3>
+                <form action="" method="post">
+                    <div class="mb-3">
+                        <label for="sttA" class="form-label">Enter a String</label>
+                        <input type="text" class="form-control" id="sttA" name="sttA" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="sttB" class="form-label">Enter another String</label>
+                        <input type="text" class="form-control" id="sttB" name="sttB" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" name="operation" value="concate">Concatenate</button>
+                </form>
+                <?php
 
-            <?php
+                if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['sttA']) && isset($_POST['sttB']) && isset($_POST['operation'])) {
+                    $sttA = $_POST['sttA'];
+                    $sttB = $_POST['sttB'];
+                    $operation = $_POST['operation'];
+                    echo "<div class='mt-5'>";
+                    echo "<p> Entered string A is : $sttA </p>";
+                    echo "<p> Entered string B is : $sttB </p>";
 
-            if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['sttA']) && isset($_POST['sttB']) && isset($_POST['operation'])) {
-                $sttA = $_POST['sttA'];
-                $sttB = $_POST['sttB'];
-                $operation = $_POST['operation']; 
-                echo "<p> Entered string A is : $sttA </p>";
-                echo "<p> Entered string B is : $sttB </p>";
-                echo "<p> Operation is : $operation </p>";
+                    $conca = $sttA . $sttB;
 
-                $lenA = strlen($sttA);
-                $lenB = strlen($sttB);
-
-                $conca = $sttA . $sttB;
-
-                $substr = substr($sttA, 0, 3);
-
-                if ($operation == "concate") {
                     echo "<p> Concatenated string is : $conca </p>";
-                } elseif ($operation == "substr") {
-                    echo "<p> Substring is : $substr </p>";
-                } elseif ($operation == "strlen") {
-                    echo "<p> Length of string A is : $lenA </p>";
-                    echo "<p> Length of string B is : $lenB </p>";
+                    echo "</div>";
                 }
-            }
 
-            ?>
+                ?>
+            </div>
+
+            <div class="col-4 p-5">
+                <h3 class="mb-3">Sub-string Extraction</h3>
+                <form action="" method="post">
+                    <div class="mb-3">
+                        <label for="sttC" class="form-label">Enter a String</label>
+                        <input type="text" class="form-control" id="sttC" name="sttC" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="offset" class="form-label">Enter offset value</label>
+                        <input type="number" class="form-control" id="offset" name="offset" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="sublen" class="form-label">Enter substring length</label>
+                        <input type="number" class="form-control" id="sublen" name="sublen" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" name="operation" value="substr">Extract
+                        Substring</button>
+                </form>
+
+                <?php
+
+                if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['sttC']) && isset($_POST['offset']) && isset($_POST['sublen']) && isset($_POST['operation'])) {
+                    $sttC = $_POST['sttC'];
+                    $offset = $_POST['offset'];
+                    $sublen = $_POST['sublen'];
+                    $operation = $_POST['operation'];
+                    echo "<div class='mt-5'>";
+                    echo "<p> Entered string C is : $sttC </p>";
+                    echo "<p> Entered offset value is : $offset </p>";
+                    echo "<p> Entered substring length is : $sublen </p>";
+
+                    $substr = substr($sttC, $offset, $sublen);
+
+                    echo "<p> Substring is : $substr </p>";
+                    echo "</div>";
+                }
+
+                ?>
+            </div>
+
+            <div class="col-4 p-5">
+                <h3 class="mb-3">Check string length</h3>
+                <form action="" method="post">
+                    <div class="mb-3">
+                        <label for="sttD" class="form-label">Enter a String</label>
+                        <input type="text" class="form-control" id="sttD" name="sttD">
+                    </div>
+                    <button type="submit" class="btn btn-primary" name="operation" value="strlen">Get length of
+                        String</button>
+                </form>
+                <?php
+
+                if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['sttD']) && isset($_POST['operation'])) {
+                    $sttD = $_POST['sttD'];
+                    $operation = $_POST['operation'];
+                    echo "<div class='mt-5'>";
+                    echo "<p> Entered string D is : $sttD </p>";
+
+                    $lenD = strlen($sttD);
+
+                    echo "<p> Length of string D is : $lenD </p>";
+                    echo "</div>";
+                }
+
+                ?>
+            </div>
         </div>
+
     </div>
 
 </body>

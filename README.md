@@ -459,4 +459,144 @@ extraction, and string length determination.
 
 - File name : <a href="M1_LE_25.php">M1_LE_25.php</a>
 
-## 
+## Extra LAB EXERCISES for Core PHP
+
+## 1. PHP Syntax
+
+### Lab Exercise : 26. 
+
+Write a PHP script that demonstrates the use of single-line (//),
+multi-line (/* */), and inline (#) comments.
+
+- File name : <a href="M1_LE_26.php">M1_LE_26.php</a>
+
+### Lab Exercise : 27. 
+
+Embedding HTML and PHP: Create a web page that uses PHP to dynamically
+generate HTML content (e.g., a table with user information using PHP).
+
+- File name : <a href="M1_LE_27.php">M1_LE_27.php</a>
+
+### Lab Exercise : 28. 
+
+Output Statements: Experiment with echo, print, and var_dump. Write a script that
+outputs different types of data using these functions.
+
+- File name : <a href="M1_LE_28.php">M1_LE_28.php</a>
+
+
+## 2. PHP Variables
+
+### Lab Exercise : 29. 
+
+Type Casting: Write a script that declares variables of different types and converts
+them into other types (e.g., integer to float, string to integer). Display the type and
+value before and after the conversion.
+
+- File name : <a href="M1_LE_29.php">M1_LE_29.php</a>
+
+### Lab Exercise : 30. 
+
+Variable Variables: Demonstrate the use of variable variables in PHP. Write a script
+where a variable name is stored in another variable, and then use it to print the value.
+
+- File name : <a href="M1_LE_30.php">M1_LE_30.php</a>
+
+### Lab Exercise : 31. 
+
+Global and Local Scope: Write a script that shows how global and local variables
+work. Use the global keyword inside a function to access a global variable.
+
+- File name : <a href="M1_LE_31.php">M1_LE_31.php</a>
+
+## 3. Super Global Variables
+
+### Lab Exercise : 32. 
+
+$_GET and $_POST : Create two separate forms: one that uses the $_GET method
+and one that uses $_POST. Display the difference in the URL and how data is passed.
+
+- File name : <a href="M1_LE_32.php">M1_LE_32.php</a>
+
+### Lab Exercise : 33. 
+
+$_SERVER : Write a script to display various details of the server environment using
+$_SERVER (like PHP_SELF, SERVER_NAME, HTTP_USER_AGENT, etc.).
+
+- File name : <a href="M1_LE_33.php">M1_LE_33.php</a>
+
+### Lab Exercise : 34. 
+
+$_FILES : Create a form that allows users to upload a file. Handle the uploaded file
+using the $_FILES super global and display information about the file.
+
+- File name : <a href="M1_LE_34.php">M1_LE_34.php</a>
+
+## 4. Practical Example: Multiple Tables and SQL Queries
+
+### Lab Exercise : 35. 
+
+Complex Joins : Create a PHP script that connects two or more tables using INNER
+JOIN, LEFT JOIN, and RIGHT JOIN. Display data from these tables based on
+specific conditions.
+
+- File name : <a href="M1_LE_35.php">M1_LE_35.php</a>
+
+### Lab Exercise : 36. 
+
+Prepared Statements : Implement SQL queries using prepared statements with
+placeholders to prevent SQL injection in SELECT, INSERT, UPDATE, and DELETE.
+
+- File name : <a href="M1_LE_36.php">M1_LE_36.php</a>
+
+### Lab Exercise : 37. 
+
+Transaction Management : Write a PHP script that uses SQL transactions to insert
+data into multiple tables, ensuring data integrity in case of an error.
+
+- File name : <a href="M1_LE_37.php">M1_LE_37.php</a>
+
+## 5. Conditions, Events, and Flows
+
+### Lab Exercise : 38. 
+
+Nested Conditions : Write a script that uses nested if-else conditions to categorize a number as positive, negative, or zero, and also check if it's an even or odd number.
+
+- File name : <a href="M1_LE_38.php">M1_LE_38.php</a>
+
+### Lab Exercise : 39. 
+
+Switch Case with Multiple Cases: Write a script that accepts a grade (A, B, C, D, F) and displays a message using a switch statement. Handle multiple cases that fall under the same logic (e.g., A and B show "Excellent").
+
+- File name : <a href="M1_LE_39.php">M1_LE_39.php</a>
+
+## 6. If Condition and If-Else If
+
+### Lab Exercise : 40. 
+
+Grading System: Write a PHP program that accepts a student’s marks and outputs
+their grade using if-else conditions (A, B, C, D, Fail based on score).
+
+- File name : <a href="M1_LE_40.php">M1_LE_40.php</a>
+
+### Lab Exercise : 41. 
+
+Temperature Converter: Write a script that takes temperature in Celsius or
+Fahrenheit as input and converts it to the other format using if conditions.
+
+- File name : <a href="M1_LE_41.php">M1_LE_41.php</a>
+
+
+Extra LAB EXERCISES:
+ 
+ 
+6. If Condition and If-Else If
+Extra LAB EXERCISES:
+ 
+ 
+7. Practical Example: Calculator and Day Finder
+Extra LAB EXERCISES:
+ Enhanced Calculator: Modify the calculator to handle more complex operations
+such as exponentiation (^), modulus (%), and square root (√).
+ Date Finder with Time Zone: Write a script that finds the current day and prints
+"Happy Sunday" if it's Sunday, but also adjusts for different time zones.
