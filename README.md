@@ -1501,7 +1501,7 @@ The advantages of using PHP to manage HTML forms include:
       - Use PHP to process the form data and display a confirmation message with the submitted information.  
       - Validate user inputs and provide appropriate feedback.
 
-- File name : <a href="M1_LE_61/M1_LE_62.php">M1_LE_62.php</a>
+- File name : <a href="M1_LE_56/LE_62.php">M1_LE_62.php</a>
 
 ### Lab Exercise : 63.
 
@@ -1512,19 +1512,29 @@ The advantages of using PHP to manage HTML forms include:
       - Use a loop to display the items in a styled HTML list.  
       - Style the list using CSS.
 
+- File name : <a href="M1_LE_56/LE_63.php">M1_LE_63.php</a>
+
+### Lab Exercise : 64.
+
 4. CSS Grid and Flexbox  
   - Objective: Create a responsive layout using CSS Grid or Flexbox.  
     - Instructions:  
       - Build a grid layout for a gallery of images or a product showcase using either CSS Grid or Flexbox.
       - Ensure that the layout is responsive and adjusts based on the screen size.  
       - Use media queries to change the layout for mobile devices.  
-      
+
+- File name : <a href="M1_LE_56/LE_64.php">M1_LE_64.php</a>
+
+### Lab Exercise : 65.
+
 5. Styling a PHP Application  
   - Objective: Apply CSS styles to a PHP web application.  
     - Instructions:  
       - Create a simple PHP application (e.g., a user registration page).  
       - Use an external CSS file to style the form elements (e.g., inputs, buttons, labels).  
-      - Ensure that the application is visually appealing and  user-friendly.  
+      - Ensure that the application is visually appealing and user-friendly.  
+
+- File name : <a href="M1_LE_56/LE_65.php">M1_LE_65.php</a>
 
 6. Implementing a Responsive Navigation Bar  
   - Objective: Create a responsive navigation bar using HTML and CSS.  
