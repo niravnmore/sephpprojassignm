@@ -538,22 +538,22 @@ work. Use the global keyword inside a function to access a global variable.
 
 ### Lab Exercise : 32.
 
-$\_GET and $\_POST : Create two separate forms: one that uses the $\_GET method
-and one that uses $\_POST. Display the difference in the URL and how data is passed.
+`$_GET` and `$_POST` : Create two separate forms: one that uses the `$_GET` method
+and one that uses `$_POST`. Display the difference in the URL and how data is passed.
 
 - File name : <a href="M1_LE_32.php">M1_LE_32.php</a>
 
 ### Lab Exercise : 33.
 
-$_SERVER : Write a script to display various details of the server environment using
-$\_SERVER (like PHP_SELF, SERVER_NAME, HTTP_USER_AGENT, etc.).
+`$_SERVER` : Write a script to display various details of the server environment using
+`$_SERVER` (like PHP_SELF, SERVER_NAME, HTTP_USER_AGENT, etc.).
 
 - File name : <a href="M1_LE_33.php">M1_LE_33.php</a>
 
 ### Lab Exercise : 34.
 
-$\_FILES : Create a form that allows users to upload a file. Handle the uploaded file
-using the $\_FILES super global and display information about the file.
+`$_FILES` : Create a form that allows users to upload a file. Handle the uploaded file
+using the `$_FILES` super global and display information about the file.
 
 - File name : <a href="M1_LE_34.php">M1_LE_34.php</a>
 
@@ -726,7 +726,7 @@ plain text file or a JSON response.
 Template System: Write a PHP script that includes header, navigation, and footer
 files in multiple web pages to create a basic template system.
 
-- File name : <a href="M1_LE_56.php">M1_LE_56.php</a>
+- File name : <a href="M1_LE_56/index.php">M1_LE_56.php</a>
 
 ### Lab Exercise : 57.
 
@@ -940,9 +940,12 @@ Block-level and inline elements are the two main categories of HTML elements, ea
 
 1. Block-Level Elements :
 
-- **Occupy Full Width** : A block-level element always starts on a new line and occupies the full width of its container (parent element).
-- **Stack Vertically** : Elements appear one below the other, creating a "block-like" structure.
-- **Can Contain Other Elements** : Block-level elements can contain other block-level or inline elements.
+- **Occupy Full Width** : A block-level element always starts on a new line and occupies the full width of its container (parent element).  
+
+- **Stack Vertically** : Elements appear one below the other, creating a "block-like" structure.  
+
+- **Can Contain Other Elements** : Block-level elements can contain other block-level or inline elements.  
+
 - **Formatting** : Suitable for structuring content (e.g., headings, paragraphs, sections).
 - Common Block-Level Elements :
   - `<div>` : Generic container for grouping content.
@@ -965,9 +968,12 @@ Block-level and inline elements are the two main categories of HTML elements, ea
 
 2. Inline Elements :
 
-- **Do Not Start a New Line** : Inline elements stay in the same line as surrounding content unless wrapped to the next line by the container's width.
-- **Occupy Only Necessary Space**: The width of an inline element is only as wide as its content.
-- **Cannot Contain Block-Level Elements**: Inline elements can contain text or other inline elements but not block-level elements.
+- **Do Not Start a New Line** : Inline elements stay in the same line as surrounding content unless wrapped to the next line by the container's width.  
+
+- **Occupy Only Necessary Space**: The width of an inline element is only as wide as its content.  
+
+- **Cannot Contain Block-Level Elements**: Inline elements can contain text or other inline elements but not block-level elements.  
+
 - **Formatting**: Primarily used for styling or modifying parts of text or content.
 - Common Inline Elements :
   - `<span>`: Generic container for styling text.
@@ -1101,8 +1107,10 @@ Block-level and inline elements are the two main categories of HTML elements, ea
 </tr>
 <tr>
 <td>Purpose</td>
-<td>Defines the structure and content of a webpage.</td>
-<td>Defines the style, design, and layout of the webpage.</td>
+<td>Defines the structure and content 
+of a webpage.</td>
+<td>Defines the style, design, and 
+layout of the webpage.</td>
 </tr>
 <tr>
 <td>Language Type</td>
@@ -1111,25 +1119,31 @@ Block-level and inline elements are the two main categories of HTML elements, ea
 </tr>
 <tr>
 <td>Role</td>
-<td>Specifies what content is displayed.</td>
-<td>Specifies how the content is displayed.</td>
+<td>Specifies what content is 
+displayed.</td>
+<td>Specifies how the content is 
+displayed.</td>
 </tr>
 <tr>
 <td>Syntax</td>
-<td>Uses tags (<tag>) to structure content.</td>
-<td>Uses selectors, properties, and values to apply styles.</td>
+<td>Uses tags (<tag>) to structure 
+content.</td>
+<td>Uses selectors, properties, and 
+values to apply styles.</td>
 </tr>
 <tr>
 <td>Example</td>
 <td>
 
-    <p>Hello World</p>(creates a paragraph).
+    <p>Hello World</p>
     
+creates a paragraph.
 </td>
 <td>
 
-    p { color: red; } (makes the paragraph red).
-
+    p { color: red; }
+    
+makes the paragraph red.
 </td>
 </tr>
 </table>
@@ -1196,29 +1210,29 @@ Block-level and inline elements are the two main categories of HTML elements, ea
 - Size can be controlled with the width and height properties.
 - **Padding** : The space between the content and the border.
 - Increases the distance between the content and the edges of the box.
-```css
-padding: 10px;
-```
+  ```css
+  padding: 10px;
+  ```
 - **Border** : The edge surrounding the padding (or content, if padding is not set).  
 - Can be styled with properties like border-width, border-style, and border-color.
-```css
-border: 2px solid black;
-```
+  ```css
+  border: 2px solid black;
+  ```
 - **Margin** : The outermost space that separates the box from neighboring elements.  
 - Does not have a background color or border.
-```css
-margin: 20px;
-```
+  ```css
+  margin: 20px;
+  ```
 - Box Model example
-```css
-div {
-    width: 200px; /* Content width */
-    height: 100px; /* Content height */
-    padding: 10px; /* Space around content */
-    border: 2px solid black; /* Border around padding */
-    margin: 20px; /* Space outside the border */
-}
-```
+  ```css
+  div {
+      width: 200px; /* Content width */
+      height: 100px; /* Content height */
+      padding: 10px; /* Space around content */
+      border: 2px solid black; /* Border around padding */
+      margin: 20px; /* Space outside the border */
+  }
+  ```
 
 ## 3. Responsive Web Design
 
@@ -1232,13 +1246,13 @@ div {
 - Fluid Grids : Use percentage-based widths instead of fixed units like pixels to create layouts that scale fluidly.  
 - Flexible Images : Ensure that images resize dynamically to fit within their containers using properties like max-width: 100%.  
 - Media Queries : CSS feature that applies specific styles based on the screen size or device characteristics.  
-```css
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-}
-```
+  ```css
+  @media (max-width: 768px) {
+      body {
+          font-size: 14px;
+      }
+  }
+  ```
 - Mobile-First Design : Start designing for smaller screens and gradually enhance the design for larger devices.
 
 #### Why is Responsive Web Design Important?
@@ -1251,115 +1265,277 @@ div {
 
 #### Techniques Used in Responsive Design
 1. Flexible Layouts : Use relative units like percentages (%) or viewport widths (vw, vh) to make the layout adapt to different screen sizes.  
-```css
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-```
-2. Media Queries : Apply different styles based on the screen's dimensions or capabilities.
-```css
-@media (max-width: 600px) {
-    .menu {
-        display: none;
+    ```css
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
     }
-}
-```
+    ```
+2. Media Queries : Apply different styles based on the screen's dimensions or capabilities.
+    ```css
+    @media (max-width: 600px) {
+        .menu {
+            display: none;
+        }
+    }
+    ```
 3. Responsive Media : Resize images and videos dynamically to prevent them from overflowing their containers.  
-```css
-img {
-    max-width: 100%;
-    height: auto;
-}
-```
+    ```css
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    ```
 4. CSS Frameworks : Frameworks like Bootstrap and Tailwind CSS provide pre-built classes for responsive design, making it faster to implement.
 
 ### Explain the use of media queries in CSS. Provide an example.
 
 - Media Queries are a feature in CSS that allow developers to apply specific styles to a webpage based on the characteristics of the user's device, such as screen size, resolution, orientation, or color scheme.  
-- They enable responsive web design by tailoring styles for different devices, ensuring an optimal user experience.
+- They enable responsive web design by tailoring styles for different devices, ensuring an optimal user experience.  
+- Syntax : A media query is written using the `@media` rule, followed by a condition (media feature) and a block of CSS rules to apply if the condition is met.
+  ```css
+  /* Basic Syntax */
+  @media (media-feature) {
+      /* CSS styles to apply */
+  }
 
-Syntax of a Media Query
-A media query is written using the @media rule, followed by a condition (media feature) and a block of CSS rules to apply if the condition is met.
-
-Basic Syntax:
-css
-Copy
-Edit
-@media (media-feature) {
-    /* CSS styles to apply */
-}
-Example:
-css
-Copy
-Edit
-@media (max-width: 768px) {
+  /* Example*/
+  @media (max-width: 768px) {
     body {
         font-size: 14px;
     }
-}
-This example applies a smaller font size to the <body> element when the screen width is 768 pixels or smaller.
+  }
+  ```
+- These are some commonly used media features :  
+  1. max-width and min-width : Target screen widths.  
+  `@media (max-width: 600px)` applies styles to screens smaller than or equal to 600px.  
+  2. max-height and min-height : Target screen heights.  
+  `@media (min-height: 800px)` applies styles to screens taller than 800px.
+  3. Orientation : Target screen orientation.  
+  `@media (orientation: landscape)` applies styles when the device is in landscape mode.
+  4. aspect-ratio : Targets screens with a specific aspect ratio.  
+  `@media (aspect-ratio: 16/9)` applies styles to 16:9 screens.
+  5. prefers-color-scheme : Detects light or dark mode preferences.  
+  `@media (prefers-color-scheme: dark)` applies styles for dark mode.
 
 ### What are the benefits of using a mobile-first approach in web design?
 
+- The mobile-first approach in web design is a strategy where the design and development process starts with creating a website optimized for smaller screens (e.g., smartphones) and gradually expands to include larger screens (e.g., tablets, desktops).  
+- This approach prioritizes the user experience on mobile devices, which are now the most commonly used devices for browsing the web.  
+- It is implemented using responsive design techniques like CSS media queries, starting with styles for small screens and adding styles for larger screens.
+
+#### Benefits of Using a Mobile-First Approach
+
+- **Improved User Experience (UX)** : Mobile-first ensures the website is user-friendly on small screens, where space is limited.  
+- Key content and functionality are prioritized, creating a streamlined and intuitive experience.  
+
+- **Better Performance** : By focusing on small screens first, developers build lightweight, fast-loading pages with only essential elements.  
+- Additional resources for larger screens are loaded conditionally, improving overall performance.  
+
+- **Catering to the Majority of Users** : Mobile devices account for a significant portion of web traffic globally. Designing for mobile first ensures your website meets the needs of the majority.  
+
+- **Simplifies Progressive Enhancement** : The mobile-first approach builds a strong foundation by addressing constraints like limited screen space and bandwidth.  
+- Additional features and styles can then be progressively added for larger devices without sacrificing usability.  
+
+- **Improved Search Engine Optimization (SEO)** : Search engines like Google prioritize mobile-friendly websites in search rankings.  
+- A mobile-first approach ensures compliance with mobile usability requirements, improving visibility in search results.  
+
+- **Encourages Prioritization of Content** : Limited screen space on mobile devices forces developers to focus on the most critical content.  
+- This leads to cleaner designs and ensures the content hierarchy is clear.  
+
+- **Cost and Time Efficiency** : Designing for mobile first can save time and resources since additional styles for larger screens are added incrementally.  
+- Reduces the risk of creating unnecessary features that don't add value to smaller screen users.  
+
+- **Future-Proof Design** : The mobile-first approach ensures compatibility with the growing variety of small-screen devices like smartphones, tablets, and wearables.  
+- As mobile usage continues to grow, mobile-first design ensures longevity and relevance. 
+
+- **Better Accessibility** : Mobile-first designs often emphasize accessibility features like readable font sizes, touch-friendly buttons, and simple navigation, which benefit all users.  
+
+- **Easier Maintenance** : A mobile-first approach results in cleaner, modular code, making it easier to maintain and update the website in the future.
 
 ## 4. PHP Integration
 
 ### How can PHP be used to dynamically generate HTML content? Provide examples.
 
+- PHP is a server-side scripting language designed to embed dynamic content within HTML pages.  
+
+- It allows developers to create HTML content based on dynamic data (e.g., user input, database queries, or API responses) and send the resulting HTML to the client.
+
+- Benefits of using PHP for dynamic HTML : 
+  1. **Personalized Content** : Tailor pages based on user preferences or input.
+
+  2. **Database Integration** : Fetch data from a database and display it as HTML.  
+
+  3. **Reusability** : Use loops and functions to avoid hardcoding repetitive HTML structures.  
+
+  4. **Interactivity** : Adjust the content dynamically based on user actions, query parameters, or conditions.
+
+- Example : display greeting according to time.
+
+```php
+<?php
+// Set timezone
+date_default_timezone_set("Asia/Kolkata");
+
+// Get the current hour
+$hour = date("H");
+
+// Determine the greeting
+if ($hour < 12) {
+    $greeting = "Good Morning!";
+} elseif ($hour < 18) {
+    $greeting = "Good Afternoon!";
+} else {
+    $greeting = "Good Evening!";
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Greeting</title>
+</head>
+<body>
+    <h1><?php echo $greeting; ?></h1>
+    <p>The current time is <?php echo date("h:i A"); ?>.</p>
+</body>
+</html>
+```
+
 ### Explain how to include CSS files in a PHP-generated HTML page.
+
+To include CSS files in a PHP-generated HTML page, you use standard HTML `<link>` or `<style>` tags within your PHP-generated output.
+
+- CSS is used to style dynamically generated content in PHP.
+- Link the CSS file in the `<head>` section of your HTML page:
+
+  ```php
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Include CSS in PHP</title>
+      <!-- Link to an external CSS file -->
+      <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+      <h1>Welcome to My Website</h1>
+      <p>This is styled using an external CSS file.</p>
+  </body>
+  </html>
+  ```
+
+- Ensure the CSS file is in the same directory as your PHP file or an appropriate relative path (e.g., `css/styles.css`).
+- If necessary, dynamically generate the CSS using PHP (e.g., `styles.php`) instead of a static `.css` file.
+- You can include CSS inside the `<style>` tag in the `<head>` section of a PHP script.
+
+  ```php
+  <?php
+  // Dynamic data
+  $bgColor = "#f0f8ff"; // AliceBlue
+  ?>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Inline CSS in PHP</title>
+      <style>
+          body {
+              background-color: <?php echo $bgColor; ?>;
+              font-family: Arial, sans-serif;
+          }
+          h1 {
+              color: #333;
+          }
+          p {
+              color: #555;
+          }
+      </style>
+  </head>
+  <body>
+      <h1>Welcome!</h1>
+      <p>This page uses inline CSS defined in PHP.</p>
+  </body>
+  </html>
+  ```
+
+- This method is useful for small amounts of CSS or when styles need to be generated dynamically.
+- You can include different CSS files or inline styles based on a condition (e.g., user preferences, themes, or pages).
+- A PHP file can generate CSS dynamically and be linked as an external stylesheet.
+- PHP can be embedded inside HTML for inline styles, but this is not recommended for larger applications.
 
 ### What are the advantages of using PHP to manage HTML forms?
 
-LAB EXERCISES
+The advantages of using PHP to manage HTML forms include:
 
-1. Creating a Simple Web Page
-    Objective: Create a basic web page using HTML and style it with CSS.
-   o Instructions:
-    Create an HTML file (e.g., index.html) that includes a header, a navigation
-   bar, a main content section, and a footer.
-    Style the page using an external CSS file (e.g., styles.css).
-    Use CSS properties such as color, background-color, font-size, and
-   padding to enhance the design.
-2. Form Handling with PHP
-    Objective: Create a simple HTML form and process it using PHP.
-   o Instructions:
-    Create an HTML form that collects user information (e.g., name, email, and
-   message).
-    Use PHP to process the form data and display a confirmation message with
-   the submitted information.
-    Validate user inputs and provide appropriate feedback.
-3. Dynamic Content Generation
-    Objective: Use PHP to generate dynamic HTML content.
-   o Instructions:
-    Create a PHP script (e.g., dynamic-content.php) that generates a list of
-   items (e.g., products or blog posts) from an array.
-    Use a loop to display the items in a styled HTML list.
-    Style the list using CSS.
-4. CSS Grid and Flexbox
-    Objective: Create a responsive layout using CSS Grid or Flexbox.
-   o Instructions:
-    Build a grid layout for a gallery of images or a product showcase using either
-   CSS Grid or Flexbox.
+- **Dynamic Handling** : PHP allows processing form data dynamically, making web applications interactive.
+- **Data Validation** : Forms can be validated on the server-side to ensure input accuracy and security.
+- **Security** : PHP can sanitize and escape user inputs to prevent security vulnerabilities like SQL injection and XSS attacks.
+- **Session & Cookie Management** : PHP enables handling user sessions and cookies to maintain login states and preferences.
+- **Database Integration** : Form data can be stored and retrieved from databases using PHP.
+- **Cross-Browser Compatibility** : Since PHP runs on the server, form handling remains consistent across different browsers.
+- **File Upload Processing** : PHP allows handling file uploads efficiently with the `$_FILES` superglobal.
+- **Custom Error Handling** : PHP provides error-handling mechanisms to display meaningful messages to users.
 
-Ensure that the layout is responsive and adjusts based on the screen size.
- Use media queries to change the layout for mobile devices. 5. Styling a PHP Application
- Objective: Apply CSS styles to a PHP web application.
-o Instructions:
- Create a simple PHP application (e.g., a user registration page).
- Use an external CSS file to style the form elements (e.g., inputs, buttons,
-labels).
- Ensure that the application is visually appealing and user-friendly. 6. Implementing a Responsive Navigation Bar
- Objective: Create a responsive navigation bar using HTML and CSS.
-o Instructions:
- Build a navigation bar using HTML <ul> and <li> elements.
- Use CSS to style the navigation bar and make it responsive (e.g., using media
-queries).
- Implement a dropdown menu for sub-navigation items. 7. Image Gallery with Lightbox Effect
- Objective: Create an image gallery that opens images in a lightbox effect.
-o Instructions:
- Use HTML to create a gallery of images.
- Implement CSS for styling and layout.
- Use JavaScript or a CSS library to create a lightbox effect when images are
-clicked.
+### Lab Exercise : 61.
+
+1. Creating a Simple Web Page  
+  - Objective: Create a basic web page using HTML and style it with CSS.  
+    - Instructions:  
+      - Create an HTML file (e.g., index.html) that includes a header, a navigation bar, a main content section, and a footer.  
+      - Style the page using an external CSS file (e.g., styles.css).  
+      - Use CSS properties such as color, background-color, font-size, and padding to enhance the design.
+
+- File name : <a href="M1_LE_61/M1_LE_61.php">M1_LE_61.php</a>
+
+### Lab Exercise : 62.
+
+2. Form Handling with PHP  
+  - Objective: Create a simple HTML form and process it using PHP.  
+    - Instructions:  
+      - Create an HTML form that collects user information (e.g., name, email, and message).  
+      - Use PHP to process the form data and display a confirmation message with the submitted information.  
+      - Validate user inputs and provide appropriate feedback.
+
+- File name : <a href="M1_LE_61/M1_LE_62.php">M1_LE_62.php</a>
+
+### Lab Exercise : 63.
+
+3. Dynamic Content Generation  
+  - Objective: Use PHP to generate dynamic HTML content.  
+    - Instructions:  
+      - Create a PHP script (e.g., dynamic-content.php) that generates a list of items (e.g., products or blog posts) from an array.  
+      - Use a loop to display the items in a styled HTML list.  
+      - Style the list using CSS.
+
+4. CSS Grid and Flexbox  
+  - Objective: Create a responsive layout using CSS Grid or Flexbox.  
+    - Instructions:  
+      - Build a grid layout for a gallery of images or a product showcase using either CSS Grid or Flexbox.
+      - Ensure that the layout is responsive and adjusts based on the screen size.  
+      - Use media queries to change the layout for mobile devices.  
+      
+5. Styling a PHP Application  
+  - Objective: Apply CSS styles to a PHP web application.  
+    - Instructions:  
+      - Create a simple PHP application (e.g., a user registration page).  
+      - Use an external CSS file to style the form elements (e.g., inputs, buttons, labels).  
+      - Ensure that the application is visually appealing and  user-friendly.  
+
+6. Implementing a Responsive Navigation Bar  
+  - Objective: Create a responsive navigation bar using HTML and CSS.  
+    - Instructions:  
+      - Build a navigation bar using HTML `<ul>` and `<li>` elements.  
+      - Use CSS to style the navigation bar and make it responsive (e.g., using media queries).  
+      - Implement a dropdown menu for sub-navigation items.  
+      
+7. Image Gallery with Lightbox Effect  
+  - Objective: Create an image gallery that opens images in a lightbox effect.  
+    - Instructions:  
+      - Use HTML to create a gallery of images.  
+      - Implement CSS for styling and layout.  
+      - Use JavaScript or a CSS library to create a lightbox effect when images are clicked.

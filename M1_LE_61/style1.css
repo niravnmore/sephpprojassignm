@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 15px;
+    text-align: center;
+    background: chartreuse;
+}
+
+.header h1 {
+    font-size: 32px;
+    color: dimgray;
+}
+
+.navbar {
+    padding: 30px;
+    text-align: end;
+    background: dimgray;
+}
+
+.navbar a {
+    font-size: 24px;
+    padding: 15px;
+    text-decoration: none;
+    color: chartreuse;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+    background: chartreuse;
+}
+
+.row {
+    height: 85vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column {
+    flex: 0 0 auto;
+    color: dimgray;
+    font-size: 20px;
+}
+
+.middle {
+    padding: 15px;
+    width: 50%;
+}
+
+.side {
+    padding: 15px;
+    background: dimgray;
+    color: chartreuse;
+    width: 25%;
+}
+
+.footer {
+
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: dimgray;
+    color: chartreuse;
+    padding: 15px;
+}
+
+.footer h2 {
+    padding: 5px;
+    text-align: center;
+}
+
+.footer p {
+    padding: 5px;
+    text-align: center;
+}
+
+.main-content {
+    width: 100%;
+    padding: 15px;
+    background: chartreuse;
+    color: dimgray;
+}
+
+.table {
+    width: 100%;
+    padding: 15px;
+    background: dimgray;
+    color: chartreuse;
+}
+
+.table tr td {
+    padding: 5px;
+    text-align: start;
+}
+
+.output {
+    width: 100%;
+    padding: 15px;
+    background: chartreuse;
+    color: dimgray;
+    text-align: start;
+}
+
