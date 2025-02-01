@@ -1534,7 +1534,7 @@ The advantages of using PHP to manage HTML forms include:
       - Use an external CSS file to style the form elements (e.g., inputs, buttons, labels).  
       - Ensure that the application is visually appealing and user-friendly.  
 
-- File name : <a href="M1_LE_56/LE_65.php">M1_LE_65.php</a>
+- File name : <a href="M1_LE_65/register.php">M1_LE_65.php</a>
 
 6. Implementing a Responsive Navigation Bar  
   - Objective: Create a responsive navigation bar using HTML and CSS.  
@@ -1542,6 +1542,8 @@ The advantages of using PHP to manage HTML forms include:
       - Build a navigation bar using HTML `<ul>` and `<li>` elements.  
       - Use CSS to style the navigation bar and make it responsive (e.g., using media queries).  
       - Implement a dropdown menu for sub-navigation items.  
+
+- File name : <a href="M1_LE_66.php">M1_LE_66.php</a>
       
 7. Image Gallery with Lightbox Effect  
   - Objective: Create an image gallery that opens images in a lightbox effect.  
