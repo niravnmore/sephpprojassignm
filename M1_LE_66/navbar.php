@@ -7,16 +7,21 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Lab Exercise</a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+    <nav class="navbar">
+        <div class="menu-toggle">☰</div>
+        <ul class="nav-links">
+            <li><a href="index.php">Home</a></li>
+            <li><a href="index.php">About</a></li>
+            <li>
+                <a href="index.php">Services</a>
+                <ul class="dropdown">
+                    <li><a href="index.php">Web Development</a></li>
+                    <li><a href="index.php">SEO</a></li>
+                    <li><a href="index.php">Marketing</a></li>
                 </ul>
-            </div>
+            </li>
+            <li><a href="index.php">Contact</a></li>
+            <li><a href="LE_67.php">LE_67</a></li>
+        </ul>
         </div>
     </nav>
